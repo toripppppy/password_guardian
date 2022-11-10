@@ -2,8 +2,8 @@ const display   = document.getElementById('display')
 const countDown = document.getElementById('count-down')
 
 //--------- SETTING ----------//
-const PASSWORD = 'pasuwa-do'        // パスワード
-const period = moment('2022-12-10') // 目標日
+const PASSWORD = '0881'        // パスワード
+const period = moment('2022-12-06') // 目標日
 
 const motibe_words = [
     'おめえのモチベはそんなもんか？？？',

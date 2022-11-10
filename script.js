@@ -48,6 +48,11 @@ const update = () => {
     // カウントダウン
     const diff = period.diff(moment());
     const duration = moment.duration(diff);
+    // 目標日に達したらストップ
+    if (moment().isSameOrAfter(period)) {
+        countDown.innerText = `パスワード解放まで、\nあと0日0時間0分0秒・・・`
+        return
+    }
     // 日・時・分・秒を取得
     const days    = Math.floor(duration.asDays());
     const hours   = duration.hours();
